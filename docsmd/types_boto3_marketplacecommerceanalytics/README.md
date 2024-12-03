@@ -1,0 +1,108 @@
+#  MarketplaceCommerceAnalytics module
+
+> [Index](../README.md) > MarketplaceCommerceAnalytics
+
+!!! note ""
+
+    Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#marketplacecommerceanalytics)
+    type annotations stubs module [types-boto3-marketplacecommerceanalytics](https://pypi.org/project/types-boto3-marketplacecommerceanalytics/).
+
+## How to install
+
+
+### VSCode extension
+
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `MarketplaceCommerceAnalytics`.
+
+
+### From PyPI with pip
+
+Install `types-boto3` for `MarketplaceCommerceAnalytics` service.
+
+```bash
+# install with boto3 type annotations
+python -m pip install 'types-boto3[marketplacecommerceanalytics]'
+
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'types-boto3-lite[marketplacecommerceanalytics]'
+
+
+# standalone installation
+python -m pip install types-boto3-marketplacecommerceanalytics
+```
+
+
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y types-boto3-marketplacecommerceanalytics
+```
+
+## Usage
+
+Code samples can be found in [Examples](./usage.md).
+
+## MarketplaceCommerceAnalyticsClient
+
+Type annotations and code completion for  `#!python boto3.client("marketplacecommerceanalytics")` as [MarketplaceCommerceAnalyticsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
+
+```python
+# MarketplaceCommerceAnalyticsClient usage example
+
+from boto3.session import Session
+
+from types_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
+
+def get_client() -> MarketplaceCommerceAnalyticsClient:
+    return Session().client("marketplacecommerceanalytics")
+```
+
+
+
+
+
+
+
+
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+```python
+# DataSetTypeType usage example
+
+from types_boto3_marketplacecommerceanalytics.literals import DataSetTypeType
+
+def get_value() -> DataSetTypeType:
+    return "customer_profile_by_geography"
+```
+
+- [DataSetTypeType](./literals.md#datasettypetype)
+- [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
+- [MarketplaceCommerceAnalyticsServiceName](./literals.md#marketplacecommerceanalyticsservicename)
+- [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
+
+
+
+
+## Type definitions
+
+Type annotations for [type definitions](./type_defs.md) used in methods and schema.
+
+- [TimestampTypeDef](./type_defs.md#timestamptypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef)
+- [StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef)
+- [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef)
+- [StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef)
+

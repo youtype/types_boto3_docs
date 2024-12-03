@@ -1,0 +1,288 @@
+# Paginators
+
+> [Index](../README.md) > [Pricing](./README.md) > Paginators
+
+!!! note ""
+
+    Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#pricing)
+    type annotations stubs module [types-boto3-pricing](https://pypi.org/project/types-boto3-pricing/).
+
+## DescribeServicesPaginator
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_paginator("describe_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing/paginator/DescribeServices.html#Pricing.Paginator.DescribeServices)
+
+```python
+# DescribeServicesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import DescribeServicesPaginator
+
+def get_describe_services_paginator() -> DescribeServicesPaginator:
+    return Session().client("pricing").get_paginator("describe_services")
+```
+
+```python
+# DescribeServicesPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import DescribeServicesPaginator
+
+session = Session()
+
+client = Session().client("pricing")  # (1)
+paginator: DescribeServicesPaginator = client.get_paginator("describe_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PricingClient](./client.md)
+2. paginator: [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
+3. item: [:material-code-braces: DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeServicesPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    ServiceCode: str = ...,
+    FormatVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeServicesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: DescribeServicesRequestDescribeServicesPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeServicesRequestDescribeServicesPaginateTypeDef](./type_defs.md#describeservicesrequestdescribeservicespaginatetypedef) 
+## GetAttributeValuesPaginator
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_paginator("get_attribute_values")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing/paginator/GetAttributeValues.html#Pricing.Paginator.GetAttributeValues)
+
+```python
+# GetAttributeValuesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import GetAttributeValuesPaginator
+
+def get_get_attribute_values_paginator() -> GetAttributeValuesPaginator:
+    return Session().client("pricing").get_paginator("get_attribute_values")
+```
+
+```python
+# GetAttributeValuesPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import GetAttributeValuesPaginator
+
+session = Session()
+
+client = Session().client("pricing")  # (1)
+paginator: GetAttributeValuesPaginator = client.get_paginator("get_attribute_values")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PricingClient](./client.md)
+2. paginator: [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
+3. item: [:material-code-braces: GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetAttributeValuesPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    AttributeName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetAttributeValuesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "AttributeName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef](./type_defs.md#getattributevaluesrequestgetattributevaluespaginatetypedef) 
+## GetProductsPaginator
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_paginator("get_products")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing/paginator/GetProducts.html#Pricing.Paginator.GetProducts)
+
+```python
+# GetProductsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import GetProductsPaginator
+
+def get_get_products_paginator() -> GetProductsPaginator:
+    return Session().client("pricing").get_paginator("get_products")
+```
+
+```python
+# GetProductsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import GetProductsPaginator
+
+session = Session()
+
+client = Session().client("pricing")  # (1)
+paginator: GetProductsPaginator = client.get_paginator("get_products")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PricingClient](./client.md)
+2. paginator: [GetProductsPaginator](./paginators.md#getproductspaginator)
+3. item: [:material-code-braces: GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetProductsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    FormatVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetProductsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: GetProductsRequestGetProductsPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetProductsRequestGetProductsPaginateTypeDef](./type_defs.md#getproductsrequestgetproductspaginatetypedef) 
+## ListPriceListsPaginator
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_paginator("list_price_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing/paginator/ListPriceLists.html#Pricing.Paginator.ListPriceLists)
+
+```python
+# ListPriceListsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import ListPriceListsPaginator
+
+def get_list_price_lists_paginator() -> ListPriceListsPaginator:
+    return Session().client("pricing").get_paginator("list_price_lists")
+```
+
+```python
+# ListPriceListsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import ListPriceListsPaginator
+
+session = Session()
+
+client = Session().client("pricing")  # (1)
+paginator: ListPriceListsPaginator = client.get_paginator("list_price_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PricingClient](./client.md)
+2. paginator: [ListPriceListsPaginator](./paginators.md#listpricelistspaginator)
+3. item: [:material-code-braces: ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListPriceListsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    EffectiveDate: TimestampTypeDef,
+    CurrencyCode: str,
+    RegionCode: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPriceListsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListPriceListsRequestListPriceListsPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "EffectiveDate": ...,
+    "CurrencyCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPriceListsRequestListPriceListsPaginateTypeDef](./type_defs.md#listpricelistsrequestlistpricelistspaginatetypedef) 
