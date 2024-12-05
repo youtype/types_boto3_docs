@@ -1,0 +1,149 @@
+#  Pricing module
+
+> [Index](../README.md) > Pricing
+
+!!! note ""
+
+    Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#pricing)
+    type annotations stubs module [types-boto3-pricing](https://pypi.org/project/types-boto3-pricing/).
+
+## How to install
+
+
+### VSCode extension
+
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `Pricing`.
+
+
+### From PyPI with pip
+
+Install `types-boto3` for `Pricing` service.
+
+```bash
+# install with boto3 type annotations
+python -m pip install 'types-boto3[pricing]'
+
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'types-boto3-lite[pricing]'
+
+
+# standalone installation
+python -m pip install types-boto3-pricing
+```
+
+
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y types-boto3-pricing
+```
+
+## Usage
+
+Code samples can be found in [Examples](./usage.md).
+
+## PricingClient
+
+Type annotations and code completion for  `#!python boto3.client("pricing")` as [PricingClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
+
+```python
+# PricingClient usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.client import PricingClient
+
+def get_client() -> PricingClient:
+    return Session().client("pricing")
+```
+
+
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("pricing").get_paginator("...")`.
+
+```python
+# DescribeServicesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_pricing.paginator import DescribeServicesPaginator
+
+def get_describe_services_paginator() -> DescribeServicesPaginator:
+    return Session().client("pricing").get_paginator("describe_services"))
+```
+
+- [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
+- [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
+- [GetProductsPaginator](./paginators.md#getproductspaginator)
+- [ListPriceListsPaginator](./paginators.md#listpricelistspaginator)
+
+
+
+
+
+
+
+
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+```python
+# DescribeServicesPaginatorName usage example
+
+from types_boto3_pricing.literals import DescribeServicesPaginatorName
+
+def get_value() -> DescribeServicesPaginatorName:
+    return "describe_services"
+```
+
+- [DescribeServicesPaginatorName](./literals.md#describeservicespaginatorname)
+- [FilterTypeType](./literals.md#filtertypetype)
+- [GetAttributeValuesPaginatorName](./literals.md#getattributevaluespaginatorname)
+- [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
+- [ListPriceListsPaginatorName](./literals.md#listpricelistspaginatorname)
+- [PricingServiceName](./literals.md#pricingservicename)
+- [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
+
+
+
+
+## Type definitions
+
+Type annotations for [type definitions](./type_defs.md) used in methods and schema.
+
+- [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [ServiceTypeDef](./type_defs.md#servicetypedef)
+- [FilterTypeDef](./type_defs.md#filtertypedef)
+- [GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef)
+- [GetPriceListFileUrlRequestRequestTypeDef](./type_defs.md#getpricelistfileurlrequestrequesttypedef)
+- [TimestampTypeDef](./type_defs.md#timestamptypedef)
+- [PriceListTypeDef](./type_defs.md#pricelisttypedef)
+- [DescribeServicesRequestDescribeServicesPaginateTypeDef](./type_defs.md#describeservicesrequestdescribeservicespaginatetypedef)
+- [GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef](./type_defs.md#getattributevaluesrequestgetattributevaluespaginatetypedef)
+- [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)
+- [GetPriceListFileUrlResponseTypeDef](./type_defs.md#getpricelistfileurlresponsetypedef)
+- [GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef)
+- [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)
+- [GetProductsRequestGetProductsPaginateTypeDef](./type_defs.md#getproductsrequestgetproductspaginatetypedef)
+- [GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef)
+- [ListPriceListsRequestListPriceListsPaginateTypeDef](./type_defs.md#listpricelistsrequestlistpricelistspaginatetypedef)
+- [ListPriceListsRequestRequestTypeDef](./type_defs.md#listpricelistsrequestrequesttypedef)
+- [ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef)
+
