@@ -1,0 +1,704 @@
+# Paginators
+
+> [Index](../README.md) > [CodeCatalyst](./README.md) > Paginators
+
+!!! note ""
+
+    Auto-generated documentation for [CodeCatalyst](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst.html#codecatalyst)
+    type annotations stubs module [types-boto3-codecatalyst](https://pypi.org/project/types-boto3-codecatalyst/).
+
+## ListAccessTokensPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_access_tokens")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListAccessTokens.html#CodeCatalyst.Paginator.ListAccessTokens)
+
+```python
+# ListAccessTokensPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListAccessTokensPaginator
+
+def get_list_access_tokens_paginator() -> ListAccessTokensPaginator:
+    return Session().client("codecatalyst").get_paginator("list_access_tokens")
+```
+
+```python
+# ListAccessTokensPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListAccessTokensPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListAccessTokensPaginator = client.get_paginator("list_access_tokens")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListAccessTokensPaginator](./paginators.md#listaccesstokenspaginator)
+3. item: [:material-code-braces: ListAccessTokensResponseTypeDef](./type_defs.md#listaccesstokensresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAccessTokensPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccessTokensResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccessTokensResponseTypeDef](./type_defs.md#listaccesstokensresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListAccessTokensRequestListAccessTokensPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccessTokensRequestListAccessTokensPaginateTypeDef](./type_defs.md#listaccesstokensrequestlistaccesstokenspaginatetypedef) 
+## ListDevEnvironmentSessionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_dev_environment_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListDevEnvironmentSessions.html#CodeCatalyst.Paginator.ListDevEnvironmentSessions)
+
+```python
+# ListDevEnvironmentSessionsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListDevEnvironmentSessionsPaginator
+
+def get_list_dev_environment_sessions_paginator() -> ListDevEnvironmentSessionsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_dev_environment_sessions")
+```
+
+```python
+# ListDevEnvironmentSessionsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListDevEnvironmentSessionsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListDevEnvironmentSessionsPaginator = client.get_paginator("list_dev_environment_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListDevEnvironmentSessionsPaginator](./paginators.md#listdevenvironmentsessionspaginator)
+3. item: [:material-code-braces: ListDevEnvironmentSessionsResponseTypeDef](./type_defs.md#listdevenvironmentsessionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListDevEnvironmentSessionsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    devEnvironmentId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDevEnvironmentSessionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDevEnvironmentSessionsResponseTypeDef](./type_defs.md#listdevenvironmentsessionsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListDevEnvironmentSessionsRequestListDevEnvironmentSessionsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+    "devEnvironmentId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevEnvironmentSessionsRequestListDevEnvironmentSessionsPaginateTypeDef](./type_defs.md#listdevenvironmentsessionsrequestlistdevenvironmentsessionspaginatetypedef) 
+## ListDevEnvironmentsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_dev_environments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListDevEnvironments.html#CodeCatalyst.Paginator.ListDevEnvironments)
+
+```python
+# ListDevEnvironmentsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListDevEnvironmentsPaginator
+
+def get_list_dev_environments_paginator() -> ListDevEnvironmentsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_dev_environments")
+```
+
+```python
+# ListDevEnvironmentsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListDevEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListDevEnvironmentsPaginator = client.get_paginator("list_dev_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListDevEnvironmentsPaginator](./paginators.md#listdevenvironmentspaginator)
+3. item: [:material-code-braces: ListDevEnvironmentsResponseTypeDef](./type_defs.md#listdevenvironmentsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListDevEnvironmentsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDevEnvironmentsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDevEnvironmentsResponseTypeDef](./type_defs.md#listdevenvironmentsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListDevEnvironmentsRequestListDevEnvironmentsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevEnvironmentsRequestListDevEnvironmentsPaginateTypeDef](./type_defs.md#listdevenvironmentsrequestlistdevenvironmentspaginatetypedef) 
+## ListEventLogsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_event_logs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListEventLogs.html#CodeCatalyst.Paginator.ListEventLogs)
+
+```python
+# ListEventLogsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListEventLogsPaginator
+
+def get_list_event_logs_paginator() -> ListEventLogsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_event_logs")
+```
+
+```python
+# ListEventLogsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListEventLogsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListEventLogsPaginator = client.get_paginator("list_event_logs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListEventLogsPaginator](./paginators.md#listeventlogspaginator)
+3. item: [:material-code-braces: ListEventLogsResponseTypeDef](./type_defs.md#listeventlogsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListEventLogsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    startTime: TimestampTypeDef,
+    endTime: TimestampTypeDef,
+    eventName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEventLogsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEventLogsResponseTypeDef](./type_defs.md#listeventlogsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListEventLogsRequestListEventLogsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "startTime": ...,
+    "endTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEventLogsRequestListEventLogsPaginateTypeDef](./type_defs.md#listeventlogsrequestlisteventlogspaginatetypedef) 
+## ListProjectsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListProjects.html#CodeCatalyst.Paginator.ListProjects)
+
+```python
+# ListProjectsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListProjectsPaginator
+
+def get_list_projects_paginator() -> ListProjectsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_projects")
+```
+
+```python
+# ListProjectsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    filters: Sequence[ProjectListFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListProjectsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ProjectListFilterTypeDef](./type_defs.md#projectlistfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 
+## ListSourceRepositoriesPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_source_repositories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListSourceRepositories.html#CodeCatalyst.Paginator.ListSourceRepositories)
+
+```python
+# ListSourceRepositoriesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSourceRepositoriesPaginator
+
+def get_list_source_repositories_paginator() -> ListSourceRepositoriesPaginator:
+    return Session().client("codecatalyst").get_paginator("list_source_repositories")
+```
+
+```python
+# ListSourceRepositoriesPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSourceRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListSourceRepositoriesPaginator = client.get_paginator("list_source_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListSourceRepositoriesPaginator](./paginators.md#listsourcerepositoriespaginator)
+3. item: [:material-code-braces: ListSourceRepositoriesResponseTypeDef](./type_defs.md#listsourcerepositoriesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSourceRepositoriesPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSourceRepositoriesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSourceRepositoriesResponseTypeDef](./type_defs.md#listsourcerepositoriesresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListSourceRepositoriesRequestListSourceRepositoriesPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSourceRepositoriesRequestListSourceRepositoriesPaginateTypeDef](./type_defs.md#listsourcerepositoriesrequestlistsourcerepositoriespaginatetypedef) 
+## ListSourceRepositoryBranchesPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_source_repository_branches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListSourceRepositoryBranches.html#CodeCatalyst.Paginator.ListSourceRepositoryBranches)
+
+```python
+# ListSourceRepositoryBranchesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSourceRepositoryBranchesPaginator
+
+def get_list_source_repository_branches_paginator() -> ListSourceRepositoryBranchesPaginator:
+    return Session().client("codecatalyst").get_paginator("list_source_repository_branches")
+```
+
+```python
+# ListSourceRepositoryBranchesPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSourceRepositoryBranchesPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListSourceRepositoryBranchesPaginator = client.get_paginator("list_source_repository_branches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListSourceRepositoryBranchesPaginator](./paginators.md#listsourcerepositorybranchespaginator)
+3. item: [:material-code-braces: ListSourceRepositoryBranchesResponseTypeDef](./type_defs.md#listsourcerepositorybranchesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSourceRepositoryBranchesPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    sourceRepositoryName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSourceRepositoryBranchesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSourceRepositoryBranchesResponseTypeDef](./type_defs.md#listsourcerepositorybranchesresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListSourceRepositoryBranchesRequestListSourceRepositoryBranchesPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+    "sourceRepositoryName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSourceRepositoryBranchesRequestListSourceRepositoryBranchesPaginateTypeDef](./type_defs.md#listsourcerepositorybranchesrequestlistsourcerepositorybranchespaginatetypedef) 
+## ListSpacesPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_spaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListSpaces.html#CodeCatalyst.Paginator.ListSpaces)
+
+```python
+# ListSpacesPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSpacesPaginator
+
+def get_list_spaces_paginator() -> ListSpacesPaginator:
+    return Session().client("codecatalyst").get_paginator("list_spaces")
+```
+
+```python
+# ListSpacesPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListSpacesPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListSpacesPaginator = client.get_paginator("list_spaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListSpacesPaginator](./paginators.md#listspacespaginator)
+3. item: [:material-code-braces: ListSpacesResponseTypeDef](./type_defs.md#listspacesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSpacesPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSpacesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSpacesResponseTypeDef](./type_defs.md#listspacesresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListSpacesRequestListSpacesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSpacesRequestListSpacesPaginateTypeDef](./type_defs.md#listspacesrequestlistspacespaginatetypedef) 
+## ListWorkflowRunsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_workflow_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListWorkflowRuns.html#CodeCatalyst.Paginator.ListWorkflowRuns)
+
+```python
+# ListWorkflowRunsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListWorkflowRunsPaginator
+
+def get_list_workflow_runs_paginator() -> ListWorkflowRunsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_workflow_runs")
+```
+
+```python
+# ListWorkflowRunsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListWorkflowRunsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListWorkflowRunsPaginator = client.get_paginator("list_workflow_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListWorkflowRunsPaginator](./paginators.md#listworkflowrunspaginator)
+3. item: [:material-code-braces: ListWorkflowRunsResponseTypeDef](./type_defs.md#listworkflowrunsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWorkflowRunsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    workflowId: str = ...,
+    sortBy: Sequence[Mapping[str, Any]] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListWorkflowRunsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListWorkflowRunsResponseTypeDef](./type_defs.md#listworkflowrunsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListWorkflowRunsRequestListWorkflowRunsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorkflowRunsRequestListWorkflowRunsPaginateTypeDef](./type_defs.md#listworkflowrunsrequestlistworkflowrunspaginatetypedef) 
+## ListWorkflowsPaginator
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").get_paginator("list_workflows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst/paginator/ListWorkflows.html#CodeCatalyst.Paginator.ListWorkflows)
+
+```python
+# ListWorkflowsPaginator usage example
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListWorkflowsPaginator
+
+def get_list_workflows_paginator() -> ListWorkflowsPaginator:
+    return Session().client("codecatalyst").get_paginator("list_workflows")
+```
+
+```python
+# ListWorkflowsPaginator usage example with type annotations
+
+from boto3.session import Session
+
+from types_boto3_codecatalyst.paginator import ListWorkflowsPaginator
+
+session = Session()
+
+client = Session().client("codecatalyst")  # (1)
+paginator: ListWorkflowsPaginator = client.get_paginator("list_workflows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCatalystClient](./client.md)
+2. paginator: [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
+3. item: [:material-code-braces: ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWorkflowsPaginator.paginate` method.
+
+```python
+# paginate method definition
+
+def paginate(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    sortBy: Sequence[Mapping[str, Any]] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListWorkflowsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef) 
+
+
+```python
+# paginate method usage example with argument unpacking
+
+kwargs: ListWorkflowsRequestListWorkflowsPaginateTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorkflowsRequestListWorkflowsPaginateTypeDef](./type_defs.md#listworkflowsrequestlistworkflowspaginatetypedef) 
