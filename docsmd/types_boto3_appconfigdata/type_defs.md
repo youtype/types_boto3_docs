@@ -1,0 +1,71 @@
+# Type definitions
+
+> [Index](../README.md) > [AppConfigData](./README.md) > Type definitions
+
+!!! note ""
+
+    Auto-generated documentation for [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#appconfigdata)
+    type annotations stubs module [types-boto3-appconfigdata](https://pypi.org/project/types-boto3-appconfigdata/).
+
+
+
+## GetLatestConfigurationRequestTypeDef
+
+```python
+# GetLatestConfigurationRequestTypeDef definition
+
+class GetLatestConfigurationRequestTypeDef(TypedDict):
+    ConfigurationToken: str,
+```
+
+## ResponseMetadataTypeDef
+
+```python
+# ResponseMetadataTypeDef definition
+
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+    HostId: NotRequired[str],
+```
+
+## StartConfigurationSessionRequestTypeDef
+
+```python
+# StartConfigurationSessionRequestTypeDef definition
+
+class StartConfigurationSessionRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    ConfigurationProfileIdentifier: str,
+    RequiredMinimumPollIntervalInSeconds: NotRequired[int],
+```
+
+## GetLatestConfigurationResponseTypeDef
+
+```python
+# GetLatestConfigurationResponseTypeDef definition
+
+class GetLatestConfigurationResponseTypeDef(TypedDict):
+    NextPollConfigurationToken: str,
+    NextPollIntervalInSeconds: int,
+    ContentType: str,
+    Configuration: StreamingBody,
+    VersionLabel: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartConfigurationSessionResponseTypeDef
+
+```python
+# StartConfigurationSessionResponseTypeDef definition
+
+class StartConfigurationSessionResponseTypeDef(TypedDict):
+    InitialConfigurationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
